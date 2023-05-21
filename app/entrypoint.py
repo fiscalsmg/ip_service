@@ -15,7 +15,6 @@ logging.basicConfig(level=logging.INFO, stream=sys.stdout)
 logger = logging.getLogger(__name__)
 
 
-# uvicorn app.main:app --reload
 @tasks_router.post("/countries_ip")
 def get_country_ip(input_ip: InputData):
     try:
